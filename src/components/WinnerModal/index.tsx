@@ -1,4 +1,5 @@
 import React from "react";
+import { IconCircle, IconXMark } from "../Icons";
 
 interface WinnerModalProps {
     winner: string | boolean | null;
@@ -18,8 +19,8 @@ const WinnerModal: React.FunctionComponent<WinnerModalProps> = ({ winner, resetG
                 </span>
                 {
                     winner &&
-                    <span className={`grid bg-neutral-950 place-content-center w-20 h-20 border-2 rounded-lg border-neutral-900`}>
-                        {winner}
+                    <span className={`grid bg-neutral-950 place-content-center w-20 h-20 winnerder-2 rounded-lg winnerder-neutral-900`}>
+                        {winner==='<IconCircle />'?<IconCircle />:(winner==='<IconXMark />'?<IconXMark />:null)}
                     </span>
                 }
                 <button

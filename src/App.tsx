@@ -67,7 +67,7 @@ function App() {
                   index={index}
                   key={index}
                   updateBoard={updateBoard}>
-                  {bor}
+                  {bor && bor==='<IconCircle />'?<IconCircle />:(bor==='<IconXMark />'?<IconXMark />:null)}
                 </Square>
               )
             })
