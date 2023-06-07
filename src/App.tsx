@@ -58,7 +58,7 @@ function App() {
     <main>
       <h1 className="w-full h-full text-center my-10 text-5xl font-bold text-neutral-300">Triki</h1>
       <section className="flex flex-col items-center w-full gap-5">
-        <button onClick={resetGame} className="text-neutral-100 border-neutral-800 bg-neutral-900 text-xl rounded-lg py-3 px-5">Reset game</button>
+        <button onClick={resetGame} className="text-neutral-100 border-neutral-800 bg-neutral-900 md:text-xl rounded-lg py-2 px-4 md:py-3 md:px-5">Reset game</button>
         <div className="text-white grid grid-cols-3 gap-3">
           {
             board.map((bor, index) => {
@@ -75,10 +75,10 @@ function App() {
         </div>
         <div className="flex gap-5">
           <span
-            className={`${turn === turns.x && 'bg-neutral-900'} grid place-content-center w-20 h-20 border-2 rounded-lg border-neutral-900`}>
+            className={`${turn === turns.x && 'bg-neutral-900'} grid place-content-center w-14 h-14 md:w-20 md:h-20 border-2 rounded-lg border-neutral-900`}>
             <IconXMark />
           </span>
-          <span className={`${turn === turns.o && 'bg-neutral-900'} grid place-content-center w-20 h-20 border-2 rounded-lg border-neutral-900`}>
+          <span className={`${turn === turns.o && 'bg-neutral-900'} grid place-content-center w-14 h-14 md:w-20 md:h-20 border-2 rounded-lg border-neutral-900`}>
             <IconCircle />
           </span>
         </div>

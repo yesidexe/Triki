@@ -19,13 +19,13 @@ const WinnerModal: React.FunctionComponent<WinnerModalProps> = ({ winner, resetG
                 </span>
                 {
                     winner &&
-                    <span className={`grid bg-neutral-950 place-content-center w-20 h-20 winnerder-2 rounded-lg winnerder-neutral-900`}>
+                    <span className={`grid bg-neutral-950 place-content-center w-14 h-14 md:w-20 md:h-20 winnerder-2 rounded-lg winnerder-neutral-900`}>
                         {winner==='<IconCircle />'?<IconCircle />:(winner==='<IconXMark />'?<IconXMark />:null)}
                     </span>
                 }
                 <button
                     onClick={resetGame}
-                    className="bg-neutral-950 text-neutral-300 text-xl px-5 py-3 rounded-lg font-medium">Empezar de nuevo</button>
+                    className="bg-neutral-950 text-neutral-300 md:text-xl px-5 py-3 rounded-lg font-medium">Empezar de nuevo</button>
             </div>
         </section>
     );

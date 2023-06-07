@@ -15,7 +15,7 @@ function Square({ children, index, updateBoard }: SquareProps) {
     return (
         <div
             onClick={() => handleClick(index)}
-            className="cursor-pointer grid place-content-center rounded-lg w-24 h-24 border-2 border-neutral-800">
+            className="cursor-pointer grid place-content-center rounded-lg w-16 h-16 md:w-24 md:h-24 border-2 border-neutral-800">
             {children}
         </div>
     );
